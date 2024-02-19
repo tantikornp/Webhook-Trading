@@ -2,8 +2,8 @@
 
 strategy("Supertrend Strategy", overlay=true, default_qty_type=strategy.percent_of_equity, default_qty_value=15)
 
-atrPeriod 		= input(10, "ATR Length")
-factor 			= input(3, "Factor")
+atrPeriod = input(10, "ATR Length")
+factor = input(3, "Factor")
 
 [_, direction] 	= supertrend(factor, atrPeriod)
 
